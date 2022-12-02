@@ -28,7 +28,7 @@ seedcollector:
       items:
         - DIRT:1
       experience: 5
-      money: 1
+      money: 0
 cactuscollector:
     name: "Cactus Collector"
     icon: CACTUS
@@ -59,4 +59,35 @@ cactuscollector:
       items:
         - SAND:1
       experience: 5
-      money: 1 
+      money: 0
+treecollector:
+    name: "Logs Exchange"
+    icon: OAK_LOG
+    description: |-
+      Exchange logs for clay
+    deployed: true
+    order: 3
+    environments:
+      - NORMAL
+      - NETHER
+      - THE_END
+    remove-completed: false
+    type: INVENTORY_TYPE
+    requirements:
+      take-items: true
+      items:
+        - OAK_LOG:16
+    rewards:
+      text: "More clay!"
+      items:
+        - CLAY:4
+      experience: 50
+      money: 10
+    repeatable: true
+    repeat-times: -1
+    repeat-rewards:
+      text: "More clay!"
+      items:
+        - CLAY:1
+      experience: 10
+      money: 0

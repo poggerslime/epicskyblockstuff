@@ -1,0 +1,62 @@
+seedcollector:
+    name: "Seed Collector"
+    icon: WHEAT_SEEDS
+    description: |-
+      &7 Exchange seeds for dirt
+    deployed: true
+    order: 1
+    environments:
+      - NORMAL
+      - NETHER
+      - THE_END
+    remove-completed: false
+    type: INVENTORY_TYPE
+    requirements:
+      take-items: true
+      items:
+        - WHEAT_SEEDS:64
+    rewards:
+      text: "More dirt!"
+      items:
+        - DIRT:4
+      experience: 50
+      money: 10
+    repeatable: true
+    repeat-times: -1
+    repeat-rewards:
+      text: "More dirt!"
+      items:
+        - DIRT:1
+      experience: 5
+      money: 1
+cactuscollector:
+    name: "Cactus Collector"
+    icon: CACTUS
+    description: |-
+      Exchange cactus for sand
+    deployed: true
+    order: 2
+    environments:
+      - NORMAL
+      - NETHER
+      - THE_END
+    remove-completed: false
+    type: INVENTORY_TYPE
+    requirements:
+      take-items: true
+      items:
+        - CACTUS:64
+    rewards:
+      text: "More sand!"
+      items:
+        - SAND:4
+      experience: 50
+      money: 10
+    repeatable: true
+    repeat-times: -1
+    repeat-rewards:
+      text: "More sand!"
+      items:
+        - SAND:1
+      experience: 5
+      money: 1 
